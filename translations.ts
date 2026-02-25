@@ -7,93 +7,103 @@ export const translations = {
       pricing: "Precio",
       faq: "FAQ",
       reserve: "Reservar",
-      hostels: "Hostels"
+      hostels: "Hoteles y Partners"
     },
     hero: {
       badgeLimited: "Cupos limitados",
       badgeGroup: "Grupo máx. 10",
-      title: "Vive un partido de Universitario",
-      titleAccent: "sin improvisar.",
-      subtitle: "Punto de encuentro, van privada, entrada asegurada y acompañamiento completo. Tu única misión es alentar.",
+      title: "Vive el fútbol peruano — ",
+      titleAccent: "de forma segura y organizada",
+      subtitle: "Nos encargamos del transporte, el acceso al estadio y el acompañamiento. Tu única preocupación es disfrutar el partido.",
       ctaPrimary: "Reservar por WhatsApp",
       ctaSecondary: "Ver qué incluye",
+      nextMatchTitle: "Próximo Partido en Casa",
+      nextMatchLocation: "El estadio • Lima",
+      ctaMicrocopy: "Cupos limitados por partido.",
       nextMatch: "Próxima fecha",
       trustChips: [
-        "🛡️ 100% Seguro",
-        "🚐 Transporte Privado",
-        "🎟️ Entrada Garantizada"
+        "Grupo pequeño (máx. 10 personas)",
+        "Minivan privada ida y vuelta",
+        "Soporte en Inglés y Español"
       ]
+    },
+    problem: {
+      title: "¿Por qué no ir por tu cuenta?",
+      text: "Los días de partido en Lima pueden ser caóticos si no conoces la zona. El transporte después del juego es difícil. El acceso al estadio puede ser confuso. La seguridad es importante cuando estás de visita por solo unos días.",
+      closing: "Nosotros eliminamos toda la incertidumbre."
     },
     whatIsKusi: {
       title: "La logística del fútbol, simplificada.",
-      description: "Somos la solución para quienes aman el fútbol pero odian la logística caótica de Lima. Gestionamos tu traslado y seguridad dentro del estadio para que disfrutes de la mística crema con tranquilidad y estilo."
+      description: "Somos la solución para quienes aman el fútbol pero odian la logística caótica de Lima. Gestionamos tu traslado y seguridad dentro del estadio para que disfrutes de la mística con tranquilidad y estilo."
     },
     includes: {
-      title: "Transparencia total.",
+      title: "Qué incluye",
       subtitle: "Lo que incluye",
       items: [
-        "Punto de encuentro en zona segura (Miraflores/San Isidro)",
-        "Van privada ida y vuelta con A/C",
-        "Entrada física o digital gestionada y garantizada",
-        "Acompañamiento bilingüe durante todo el tour",
-        "1 Bebida de cortesía",
-        "Camiseta oficial KUSI Matchday"
+        "Punto de encuentro estratégico (Miraflores o Barranco)",
+        "Minivan privada ida y vuelta",
+        "Entrada oficial al partido",
+        "Acompañamiento completo durante toda la experiencia",
+        "1 Bebida de cortesía (antes de entrar al estadio)",
+        "Camiseta souvenir KUSI"
       ]
     },
     excludes: {
-      title: "Lo que NO incluye",
+      title: "No incluye",
       items: [
-        "Comidas adicionales",
-        "Bebidas extras dentro del estadio",
-        "Acceso a zonas VIP o Palcos",
-        "Interacción con jugadores"
+        "Comidas dentro del estadio",
+        "Bebidas extras",
+        "Palcos VIP"
       ]
     },
-    /* Added experiencePage translations */
     experiencePage: {
       title: "La Experiencia KUSI",
       logisticsTitle: "Logística y Acompañamiento",
-      logisticsDesc: "Nos encargamos de todo: desde que te recogemos en el punto de encuentro hasta que regresas a casa. Nuestro equipo bilingüe te acompañará en cada paso para asegurar una experiencia inolvidable.",
+      logisticsDesc: "Nos encargamos de todo: desde que te recogemos en el punto de encuentro hasta que regresas. Nuestro equipo bilingüe te acompañará en cada paso para asegurar una experiencia inolvidable.",
       scheduleTitle: "Cronograma del Matchday",
       schedule: [
         { time: "T-3:00h", task: "Punto de encuentro y bienvenida." },
-        { time: "T-2:30h", task: "Salida de la van privada hacia el estadio." },
-        { time: "T-1:30h", task: "Llegada al Monumental e ingreso en grupo." },
+        { time: "T-2:30h", task: "Salida de la minivan privada hacia el estadio." },
+        { time: "T-1:30h", task: "Llegada al estadio e ingreso en grupo." },
         { time: "T-0:00h", task: "Inicio del partido. ¡A alentar!" },
         { time: "+2:00h", task: "Retorno al punto de encuentro." }
       ],
       paymentTitle: "Métodos de Pago y Reservas",
-      paymentDesc: "Aceptamos pagos vía Yape, Plin y transferencia bancaria. La reserva se confirma con el pago total anticipado debido a la alta demanda de entradas.",
+      paymentDesc: "Aceptamos pagos vía apps locales y transferencia bancaria. La reserva se confirma con el pago total anticipado debido a la alta demanda de entradas.",
       paymentNote: "* No se realizan reembolsos por inasistencia o tardanza.",
-      footerQuestion: "¿Tienes alguna duda sobre la logística?"
+      footerQuestion: "¿Tienes alguna duda sobre la logística?",
+      realPhoto: "Foto Real"
     },
     howItWorksPage: {
-      title: "5 pasos para llegar al Monumental",
-      subtitle: "Diseñamos una logística de precisión para que tu única preocupación sea perder la voz alentando.",
+      title: "Cómo funciona",
+      subtitle: "Diseñamos una logística de precisión para que tu única preocupación sea disfrutar el juego.",
       steps: [
-        { title: "Reserva", desc: "Separa tu cupo vía WhatsApp con el pago total anticipado.", icon: "📱" },
-        { title: "Encuentro", desc: "Llega al punto de encuentro 15 min antes de la salida.", icon: "📍" },
-        { title: "Traslado", desc: "Viaja cómodo y seguro en nuestra unidad privada.", icon: "🚐" },
-        { title: "El Partido", desc: "Disfruta el juego con tu host y el grupo de 10 personas.", icon: "🏟️" },
-        { title: "Retorno", desc: "Regresamos al punto inicial apenas termine el encuentro.", icon: "🛡️" }
+        { title: "Reserva tu lugar", desc: "Separa tu cupo vía WhatsApp con el pago total anticipado.", icon: "📱" },
+        { title: "Punto de encuentro", desc: "Llega al punto de encuentro estratégico 15 min antes de la salida.", icon: "📍" },
+        { title: "Viaja con el grupo", desc: "Viaja cómodo y seguro en nuestra minivan privada.", icon: "🚐" },
+        { title: "Disfruta el partido", desc: "Disfruta el juego con acompañamiento completo.", icon: "🏟️" },
+        { title: "Retorno seguro", desc: "Regresamos al punto inicial apenas termine el encuentro.", icon: "🛡️" }
       ],
       ctaTitle: "¿Listo para vivir la experiencia?",
       ctaButton: "Reservar mi lugar ahora"
     },
     pricingPage: {
-      title: "Inversión de la experiencia",
-      subtitle: "Pago único. Incluye movilidad, entrada y seguridad. Sin cargos ocultos.",
+      title: "Precio de la experiencia",
+      subtitle: "Todo organizado. Sin improvisación. Sin estrés.",
+      mainPrice: "USD 120 por persona",
+      secondaryPrice: "(Aprox. S/ 400)",
       perPerson: "Por persona",
-      includesTax: "Incluye IGV",
+      includesTax: "Impuestos incluidos",
       whyPay: "¿Qué estás pagando realmente?",
+      scarcity: "Limitado a 10 personas por partido.",
       benefits: [
         { title: "Seguridad", desc: "Acompañamiento profesional y rutas validadas." },
-        { title: "Comodidad", desc: "Van privada con A/C y bebidas, sin tráfico." },
+        { title: "Comodidad", desc: "Minivan privada con A/C y bebidas." },
         { title: "Garantía", desc: "Entradas originales gestionadas con antelación." },
         { title: "Mística", desc: "Camiseta oficial del tour y guía bilingüe experto." }
       ],
       cta: "Reservar por WhatsApp",
-      paymentNote: "Aceptamos Yape, Plin y Transferencias (BCP/BBVA).",
+      paymentNote: "Aceptamos apps locales y transferencias.",
       infoTitle: "Información de Pago",
       reservaTitle: "Reserva con el 100%",
       reservaDesc: "Debido a la alta demanda, solo confirmamos cupos con el pago total anticipado.",
@@ -104,20 +114,25 @@ export const translations = {
       title: "Por qué elegir KUSI",
       description: "Ir al estadio en Lima puede ser intimidante. KUSI elimina esa barrera con rutas validadas, ingresos en bloque y monitoreo constante. No somos un tour improvisado, somos profesionales del fútbol.",
       monitoring: "Monitoreo en tiempo real",
-      monitoringDesc: "Seguimos la ubicación de nuestras vans en todo momento.",
+      monitoringDesc: "Seguimos la ubicación de nuestras minivans en todo momento.",
       protocols: "Protocolos de ingreso",
       protocolsDesc: "Rutas validadas para evitar aglomeraciones peligrosas.",
-      testimonial: "Me sentí seguro desde que subí a la van hasta que volví al hotel."
+      testimonial: "Me sentí seguro desde que subí a la minivan hasta que volví al hotel.",
+      testimonialName: "Javier Medina",
+      testimonialCountry: "España 🇪🇸",
+      testimonialText: "Quería vivir el fútbol local pero no sabía cómo hacerlo de forma segura. KUSI se encargó de todo. Solo disfruté el partido.",
+      testimonialLegal: "Fotos y testimonios publicados con autorización."
     },
     faqPage: {
-      title: "Preguntas Frecuentes",
+      title: "FAQ",
       subtitle: "Todo lo que necesitas saber sobre el KUSI Matchday.",
       moreQuestions: "¿No encuentras tu respuesta?",
       cta: "Preguntar por WhatsApp",
+      supportText: "Escríbenos directamente y un miembro del equipo te atenderá en minutos.",
       items: [
         {
           question: "¿Es seguro?",
-          answer: "Absolutamente. La seguridad es nuestra prioridad. Contamos con transporte privado puerta a puerta, acompañamiento constante y entradas en zonas seguras."
+          answer: "Absolutamente. La seguridad es nuestra prioridad. Contamos con transporte privado, acompañamiento constante y entradas en zonas seguras."
         },
         {
           question: "¿Qué pasa si se cancela el partido?",
@@ -125,7 +140,7 @@ export const translations = {
         },
         {
           question: "¿Qué pasa si llego tarde?",
-          answer: "La van sale puntual. Recomendamos llegar 15 min antes. No hay reembolsos por tardanza."
+          answer: "La minivan sale puntual. Recomendamos llegar 15 min antes. No hay reembolsos por tardanza."
         }
       ]
     },
@@ -152,7 +167,7 @@ export const translations = {
       content: "Tus datos se utilizan exclusivamente para la gestión de la reserva."
     },
     hostelsPage: {
-      title: "Programa para Hostels y Partners",
+      title: "Hoteles y Partners",
       subtitle: "Genera ingresos extra ofreciendo la mejor experiencia de fútbol de Lima.",
       description: "Buscamos aliados estratégicos en Miraflores, Barranco y San Isidro.",
       benefitsTitle: "Beneficios para tu Partner",
@@ -168,7 +183,11 @@ export const translations = {
       contact: "Contacto",
       rights: "Todos los derechos reservados."
     },
-    whatsappMessage: "Hola KUSI! Me interesa el tour Matchday Universitario."
+    whatsappMessage: "Hola KUSI! Me interesa el tour Matchday.",
+    finalCta: {
+      title: "¿Listo para la próxima fecha?",
+      subtitle: "Los cupos son limitados (máx. 10 personas por grupo). Asegura tu lugar hoy mismo."
+    }
   },
   en: {
     nav: {
@@ -177,49 +196,55 @@ export const translations = {
       pricing: "Pricing",
       faq: "FAQ",
       reserve: "Book Now",
-      hostels: "Partners"
+      hostels: "Hotels & Accommodation Partners"
     },
     hero: {
       badgeLimited: "Limited spots",
       badgeGroup: "Max group 10",
-      title: "Experience a Universitario match",
-      titleAccent: "stress-free.",
-      subtitle: "Meeting point, private van, guaranteed tickets, and full guidance. Your only mission is to cheer.",
-      ctaPrimary: "Book via WhatsApp",
+      title: "Experience Peruvian Football — ",
+      titleAccent: "The Safe & Organized Way",
+      subtitle: "We handle transportation, stadium access and guidance. Your only concern is enjoying the match.",
+      ctaPrimary: "Reserve via WhatsApp",
       ctaSecondary: "See what's included",
+      nextMatchTitle: "Next Home Match",
+      nextMatchLocation: "The stadium • Lima",
+      ctaMicrocopy: "Limited spots per match.",
       nextMatch: "Next Match",
       trustChips: [
-        "🛡️ 100% Safe",
-        "🚐 Private Van",
-        "🎟️ Guaranteed Entry"
+        "Small group (max 10 people)",
+        "Private round-trip minivan",
+        "English & Spanish support"
       ]
+    },
+    problem: {
+      title: "Why not go on your own?",
+      text: "Matchdays in Lima can be chaotic if you don’t know the area. Transportation after the game is difficult. Stadium access can be confusing. Safety matters when you're visiting for just a few days.",
+      closing: "We remove all the uncertainty."
     },
     whatIsKusi: {
       title: "Football logistics, simplified.",
       description: "We are the solution for those who love football but hate Lima's chaotic logistics. We manage your transport and security inside the stadium so you can enjoy the spirit with peace and style."
     },
     includes: {
-      title: "Total Transparency.",
+      title: "What’s Included",
       subtitle: "What's included",
       items: [
-        "Safe meeting point (Miraflores/San Isidro)",
-        "Round-trip private van with A/C",
-        "Guaranteed physical or digital tickets",
-        "Bilingual guidance throughout the tour",
-        "1 Complimentary drink",
-        "Official KUSI Matchday T-shirt"
+        "Strategic meeting point (Miraflores or Barranco)",
+        "Round-trip private minivan",
+        "Official match ticket",
+        "Full guidance during the entire experience",
+        "1 courtesy drink (before entering the stadium)",
+        "KUSI souvenir t-shirt"
       ]
     },
     excludes: {
-      title: "What's NOT included",
+      title: "Not Included",
       items: [
-        "Additional meals",
-        "Extra drinks inside the stadium",
-        "VIP or Box access",
-        "Player interactions"
+        "Food inside the stadium",
+        "Extra drinks",
+        "VIP boxes"
       ]
     },
-    /* Added experiencePage translations */
     experiencePage: {
       title: "The KUSI Experience",
       logisticsTitle: "Logistics and Guidance",
@@ -227,38 +252,42 @@ export const translations = {
       scheduleTitle: "Matchday Schedule",
       schedule: [
         { time: "T-3:00h", task: "Meeting point and welcome." },
-        { time: "T-2:30h", task: "Private van departure to the stadium." },
-        { time: "T-1:30h", task: "Arrival at the Monumental and group entry." },
+        { time: "T-2:30h", task: "Private minivan departure to the stadium." },
+        { time: "T-1:30h", task: "Arrival at the stadium and group entry." },
         { time: "T-0:00h", task: "Match kick-off. Let's cheer!" },
         { time: "+2:00h", task: "Return to the meeting point." }
       ],
       paymentTitle: "Payment Methods and Bookings",
       paymentDesc: "We accept payments via local apps and bank transfers. Bookings are confirmed with full prepayment due to high ticket demand.",
       paymentNote: "* No refunds for no-shows or lateness.",
-      footerQuestion: "Any questions about the logistics?"
+      footerQuestion: "Any questions about the logistics?",
+      realPhoto: "Real Photo"
     },
     howItWorksPage: {
-      title: "5 steps to reach the Stadium",
-      subtitle: "We design high-precision logistics so your only concern is cheering.",
+      title: "How It Works",
+      subtitle: "We design high-precision logistics so your only concern is enjoying the game.",
       steps: [
-        { title: "Booking", desc: "Secure your spot via WhatsApp with full prepayment.", icon: "📱" },
-        { title: "Meeting", desc: "Arrive at the meeting point 15 mins before departure.", icon: "📍" },
-        { title: "Transfer", desc: "Travel comfortably and safely in our private unit.", icon: "🚐" },
-        { title: "The Match", desc: "Enjoy the game with your host and the group of 10.", icon: "🏟️" },
-        { title: "Return", desc: "We head back to the starting point right after the game.", icon: "🛡️" }
+        { title: "Reserve your spot", desc: "Secure your spot via WhatsApp with full prepayment.", icon: "📱" },
+        { title: "Meeting point", desc: "Meet the group at the strategic meeting point 15 mins before departure.", icon: "📍" },
+        { title: "Travel together", desc: "Travel together in our private minivan.", icon: "🚐" },
+        { title: "Enjoy the match", desc: "Enjoy the match with full guidance.", icon: "🏟️" },
+        { title: "Safe return", desc: "Safe return after the game.", icon: "🛡️" }
       ],
       ctaTitle: "Ready for the experience?",
       ctaButton: "Book my spot now"
     },
     pricingPage: {
-      title: "Experience Investment",
-      subtitle: "One-time payment. Includes transport, ticket, and safety. No hidden fees.",
+      title: "Experience Price",
+      subtitle: "Everything organized. No improvisation. No stress.",
+      mainPrice: "USD 120 per person",
+      secondaryPrice: "(Approx. S/ 400)",
       perPerson: "Per person",
       includesTax: "Tax included",
       whyPay: "What are you actually paying for?",
+      scarcity: "Limited to 10 people per match.",
       benefits: [
         { title: "Safety", desc: "Professional guidance and validated routes." },
-        { title: "Comfort", desc: "Private van with A/C and drinks." },
+        { title: "Comfort", desc: "Private minivan with A/C and drinks." },
         { title: "Guarantee", desc: "Original tickets managed in advance." },
         { title: "Expertise", desc: "Bilingual guide and official tour T-shirt." }
       ],
@@ -274,16 +303,21 @@ export const translations = {
       title: "Why choose KUSI",
       description: "Going to a stadium in Lima can be intimidating. KUSI removes that barrier with validated routes and constant monitoring. We are football professionals.",
       monitoring: "Real-time monitoring",
-      monitoringDesc: "We track our vans' location at all times.",
+      monitoringDesc: "We track our minivans' location at all times.",
       protocols: "Entry Protocols",
       protocolsDesc: "Validated routes to avoid dangerous crowds.",
-      testimonial: "I felt safe from start to finish."
+      testimonial: "I felt safe from start to finish.",
+      testimonialName: "Javier Medina",
+      testimonialCountry: "Spain 🇪🇸",
+      testimonialText: "I wanted to experience local football but didn’t know how to do it safely. KUSI handled everything. I just enjoyed the match.",
+      testimonialLegal: "Photos and testimonials published with authorization."
     },
     faqPage: {
       title: "FAQ",
       subtitle: "Everything you need to know.",
       moreQuestions: "Any other questions?",
       cta: "Ask via WhatsApp",
+      supportText: "Write to us directly and a team member will assist you in minutes.",
       items: [
         {
           question: "Is it safe?",
@@ -295,7 +329,7 @@ export const translations = {
         },
         {
           question: "Lateness?",
-          answer: "The van departs on time. No refunds for no-shows."
+          answer: "The minivan departs on time. No refunds for no-shows."
         }
       ]
     },
@@ -317,7 +351,7 @@ export const translations = {
       content: "Your data is only used for booking management."
     },
     hostelsPage: {
-      title: "Hostel Program",
+      title: "Hotels & Accommodation Partners",
       subtitle: "Earn extra income by offering the best football experience.",
       description: "Looking for partners in Miraflores and Barranco.",
       benefitsTitle: "Partner Benefits",
@@ -333,6 +367,10 @@ export const translations = {
       contact: "Contact",
       rights: "All rights reserved."
     },
-    whatsappMessage: "Hi KUSI! I'm interested in the tour."
+    whatsappMessage: "Hi KUSI! I'm interested in the tour.",
+    finalCta: {
+      title: "Ready for the next match?",
+      subtitle: "Spots are limited (max 10 people per group). Secure your place today."
+    }
   }
 };

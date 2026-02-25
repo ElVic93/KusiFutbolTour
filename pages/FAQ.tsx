@@ -18,7 +18,7 @@ const FAQ: React.FC = () => {
 
         <div className="mt-20 p-8 bg-[#F7F8FA] rounded-[24px] text-center border border-[#E4E6E8]">
           <h3 className="text-xl font-bold mb-4">{t.faqPage.moreQuestions}</h3>
-          <p className="text-[#111111]/60 mb-8">{language === 'es' ? 'Escríbenos directamente y un miembro del equipo te atenderá en minutos.' : 'Write to us directly and a team member will assist you in minutes.'}</p>
+          <p className="text-[#111111]/60 mb-8">{t.faqPage.supportText}</p>
           {/* Fix: Passed only language to getWhatsAppLink and moved tracking labels to Button props */}
           <Button 
             href={getWhatsAppLink(language)} 

@@ -23,7 +23,7 @@ const Home: React.FC = () => {
               <Badge variant={BadgeVariant.INFO}>{t.hero.badgeGroup}</Badge>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6 tracking-tight">
-              Vive un partido de Universitario <span className="text-[#C4161C]">{t.hero.titleAccent}</span>
+              {t.hero.title} <span className="text-[#C4161C]">{t.hero.titleAccent}</span>
             </h1>
             <p className="text-lg md:text-xl text-[#111111]/70 mb-8 leading-relaxed max-w-lg">
               {t.hero.subtitle}
@@ -49,6 +49,7 @@ const Home: React.FC = () => {
                 {t.hero.ctaSecondary}
               </Button>
             </div>
+            <p className="mt-4 text-xs text-[#111111]/40 italic">{t.hero.ctaMicrocopy}</p>
           </div>
           <div className="relative">
             {/* Foto 1: Selfie Estadio */}
@@ -62,10 +63,23 @@ const Home: React.FC = () => {
             </div>
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-[20px] shadow-xl border border-[#E4E6E8] hidden lg:block animate-in fade-in slide-in-from-left-4 duration-1000">
               <p className="text-sm font-bold text-[#C4161C] uppercase tracking-wider mb-1">{t.hero.nextMatch}</p>
-              <p className="text-xl font-bold">Próximo Partido en Casa</p>
-              <p className="text-[#111111]/60">Estadio Monumental U • Lima</p>
+              <p className="text-xl font-bold">{t.hero.nextMatchTitle}</p>
+              <p className="text-[#111111]/60">{t.hero.nextMatchLocation}</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Problem Section */}
+      <section id="problem" className="py-24 bg-[#111111] text-white">
+        <div className="max-w-[800px] mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[#C4161C]">{t.problem.title}</h2>
+          <p className="text-xl md:text-2xl leading-relaxed mb-8 opacity-90">
+            {t.problem.text}
+          </p>
+          <p className="text-2xl font-bold text-white">
+            {t.problem.closing}
+          </p>
         </div>
       </section>
 
@@ -134,8 +148,10 @@ const Home: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">{t.pricingPage.title}</h2>
           <p className="text-lg text-[#111111]/60 mb-10">{t.pricingPage.subtitle}</p>
           <Card className="border-2 border-[#C4161C] py-10">
-            <div className="text-5xl font-black mb-2 text-[#C4161C]">S/ 400</div>
-            <p className="text-[#111111]/60 mb-8">{t.pricingPage.perPerson} • {t.pricingPage.includesTax}</p>
+            <div className="text-5xl font-black mb-2 text-[#C4161C]">{t.pricingPage.mainPrice}</div>
+            <div className="text-2xl font-bold text-[#111111]/60 mb-2">{t.pricingPage.secondaryPrice}</div>
+            <p className="text-[#111111]/60 mb-4">{t.pricingPage.perPerson} • {t.pricingPage.includesTax}</p>
+            <p className="text-sm font-bold text-[#C4161C] mb-8 uppercase tracking-wider">{t.pricingPage.scarcity}</p>
             <Button 
               href={getWhatsAppLink(language)} 
               trackingLabel="Home Pricing CTA" 
@@ -169,14 +185,19 @@ const Home: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="bg-[#F7F8FA] rounded-[24px] p-4 text-center border border-[#E4E6E8]">
+          <div className="bg-[#F7F8FA] rounded-[24px] p-8 text-center border border-[#E4E6E8]">
              {/* Foto 2: Selfie Tribuna */}
              <img 
                src={ASSETS.safety} 
-               className="rounded-[16px] shadow-lg mb-6 mx-auto object-cover h-[400px] w-full border-2 border-white" 
+               className="rounded-[16px] shadow-lg mb-8 mx-auto object-cover h-[400px] w-full border-2 border-white" 
                alt="Garantía de seguridad KUSI" 
              />
-             <p className="italic text-[#111111]/50 text-sm px-4">"{t.safety.testimonial}" — Cliente KUSI</p>
+             <div className="max-w-md mx-auto">
+               <p className="text-xl italic text-[#111111] mb-4 leading-relaxed">"{t.safety.testimonialText}"</p>
+               <p className="font-bold text-[#111111]">{t.safety.testimonialName}</p>
+               <p className="text-sm text-[#111111]/60 mb-4">{t.safety.testimonialCountry}</p>
+               <p className="text-[10px] uppercase tracking-widest text-[#111111]/30">{t.safety.testimonialLegal}</p>
+             </div>
           </div>
         </div>
       </section>
@@ -190,8 +211,8 @@ const Home: React.FC = () => {
 
       <section id="final-cta" className="py-24 bg-[#C4161C] text-white overflow-hidden relative">
         <div className="max-w-[1120px] mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">¿Listo para la próxima fecha?</h2>
-          <p className="text-xl opacity-80 mb-12 max-w-2xl mx-auto">Los cupos son limitados (máx. 10 personas por grupo). Asegura tu lugar hoy mismo.</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8">{t.finalCta.title}</h2>
+          <p className="text-xl opacity-80 mb-12 max-w-2xl mx-auto">{t.finalCta.subtitle}</p>
           <Button 
             href={getWhatsAppLink(language)} 
             trackingLabel="Final CTA" 

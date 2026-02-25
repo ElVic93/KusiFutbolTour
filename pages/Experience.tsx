@@ -23,7 +23,7 @@ const Experience: React.FC = () => {
               className="w-full h-[450px] object-cover rounded-[24px] mb-8 shadow-xl border border-[#E4E6E8]" 
             />
             <div className="absolute top-4 right-4">
-              <Badge variant={BadgeVariant.INFO}>Foto Real</Badge>
+              <Badge variant={BadgeVariant.INFO}>{t.experiencePage.realPhoto}</Badge>
             </div>
           </div>
           <h2 className="text-2xl font-bold mb-4 text-[#C4161C]">{t.experiencePage.logisticsTitle}</h2>

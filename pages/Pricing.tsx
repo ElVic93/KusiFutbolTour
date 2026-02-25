@@ -22,7 +22,8 @@ const Pricing: React.FC = () => {
         <Card className="border-2 border-[#C4161C] p-0 overflow-hidden mb-12">
           <div className="bg-[#C4161C] p-8 text-white text-center">
             <h2 className="text-2xl font-bold opacity-80 mb-2">KUSI Matchday</h2>
-            <div className="text-6xl font-black">S/ 400</div>
+            <div className="text-6xl font-black">{t.pricingPage.mainPrice}</div>
+            <div className="text-2xl font-bold opacity-80 mt-2">{t.pricingPage.secondaryPrice}</div>
             <p className="mt-2 opacity-80">{t.pricingPage.perPerson} / {t.pricingPage.includesTax}</p>
           </div>
           <div className="p-8 md:p-12 bg-white">

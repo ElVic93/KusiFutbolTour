@@ -34,12 +34,12 @@ const Hostels: React.FC = () => {
             </ul>
           </div>
           <div className="bg-[#F7F8FA] rounded-[32px] p-8">
-             <img src="https://picsum.photos/600/400?grayscale&random=hostel" className="rounded-[20px] shadow-lg mb-8" alt="Hostel partner" />
+             <img src="https://picsum.photos/600/400?grayscale&random=hotel" className="rounded-[20px] shadow-lg mb-8" alt="Hotel partner" />
              {/* Fix: Passed only language to getWhatsAppLink and moved tracking labels to Button props */}
              <Button 
               href={getWhatsAppLink(language)} 
-              trackingLabel="Hostel Partner CTA" 
-              trackingSection="HostelsPage" 
+              trackingLabel="Hotel Partner CTA" 
+              trackingSection="HotelsPage" 
               fullWidth 
               variant="primary" 
               className="h-[56px] text-lg"
