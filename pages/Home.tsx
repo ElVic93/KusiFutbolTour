@@ -62,9 +62,25 @@ const Home: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-[20px] shadow-xl border border-[#E4E6E8] hidden lg:block animate-in fade-in slide-in-from-left-4 duration-1000">
-              <p className="text-sm font-bold text-[#C4161C] uppercase tracking-wider mb-1">{t.hero.nextMatch}</p>
-              <p className="text-xl font-bold">{t.hero.nextMatchTitle}</p>
-              <p className="text-[#111111]/60">{t.hero.nextMatchLocation}</p>
+              <p className="text-sm font-bold text-[#C4161C] uppercase tracking-wider mb-3">{t.hero.nextMatch}</p>
+              <div className="flex items-center gap-4 mb-2">
+                <img 
+                  src={t.hero.nextMatchData.homeLogo} 
+                  alt={`${t.hero.nextMatchData.homeTeam} logo`} 
+                  className="w-10 h-10 object-contain" 
+                  onError={(e) => (e.currentTarget.style.display = 'none')}
+                />
+                <p className="text-xl font-bold whitespace-nowrap">
+                  {t.hero.nextMatchData.homeTeam} vs {t.hero.nextMatchData.awayTeam}
+                </p>
+                <img 
+                  src={t.hero.nextMatchData.awayLogo} 
+                  alt={`${t.hero.nextMatchData.awayTeam} logo`} 
+                  className="w-10 h-10 object-contain" 
+                  onError={(e) => (e.currentTarget.style.display = 'none')}
+                />
+              </div>
+              <p className="text-[#111111]/60 text-sm">{t.hero.nextMatchData.stadium}</p>
             </div>
           </div>
         </div>

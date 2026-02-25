@@ -17,10 +17,15 @@ export const translations = {
       subtitle: "Nos encargamos del transporte, el acceso al estadio y el acompañamiento. Tu única preocupación es disfrutar el partido.",
       ctaPrimary: "Reservar por WhatsApp",
       ctaSecondary: "Ver qué incluye",
-      nextMatchTitle: "Próximo Partido en Casa",
-      nextMatchLocation: "El estadio • Lima",
       ctaMicrocopy: "Cupos limitados por partido.",
       nextMatch: "Próxima fecha",
+      nextMatchData: {
+        homeTeam: "Universitario",
+        awayTeam: "UTC",
+        stadium: "Estadio Monumental, Ate, Lima",
+        homeLogo: "/images/universitario.png",
+        awayLogo: "/images/utc.png"
+      },
       trustChips: [
         "Grupo pequeño (máx. 10 personas)",
         "Minivan privada ida y vuelta",
@@ -206,10 +211,15 @@ export const translations = {
       subtitle: "We handle transportation, stadium access and guidance. Your only concern is enjoying the match.",
       ctaPrimary: "Reserve via WhatsApp",
       ctaSecondary: "See what's included",
-      nextMatchTitle: "Next Home Match",
-      nextMatchLocation: "The stadium • Lima",
       ctaMicrocopy: "Limited spots per match.",
       nextMatch: "Next Match",
+      nextMatchData: {
+        homeTeam: "Universitario",
+        awayTeam: "UTC",
+        stadium: "Estadio Monumental, Ate, Lima",
+        homeLogo: "/images/universitario.png",
+        awayLogo: "/images/utc.png"
+      },
       trustChips: [
         "Small group (max 10 people)",
         "Private round-trip minivan",
