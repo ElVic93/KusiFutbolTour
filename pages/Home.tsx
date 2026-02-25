@@ -4,6 +4,7 @@ import Button from '../components/Button';
 import Card from '../components/Card';
 import Badge from '../components/Badge';
 import FAQAccordion from '../components/FAQAccordion';
+import HeroSlider from '../components/HeroSlider';
 import { BadgeVariant } from '../types';
 import { ASSETS } from '../constants';
 import { getWhatsAppLink } from '../lib/utils';
@@ -14,7 +15,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="flex flex-col">
-      {/* Hero Section con Foto Real */}
+      {/* Hero Section con Slider en Card */}
       <section id="hero" className="relative pt-16 pb-24 md:pt-24 md:pb-32 px-4 overflow-hidden">
         <div className="max-w-[1120px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="z-10">
@@ -52,14 +53,10 @@ const Home: React.FC = () => {
             <p className="mt-4 text-xs text-[#111111]/40 italic">{t.hero.ctaMicrocopy}</p>
           </div>
           <div className="relative">
-            {/* Foto 1: Selfie Estadio */}
-            <div className="aspect-[4/5] rounded-[24px] overflow-hidden shadow-2xl bg-[#E4E6E8] border-4 border-white">
-              <img 
-                src={ASSETS.hero} 
-                alt="Fans KUSI en el estadio" 
-                className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" 
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            {/* Slider dentro de Card con aspecto 4/5 */}
+            <div className="aspect-[4/5] rounded-[24px] overflow-hidden shadow-2xl bg-[#E4E6E8] border-4 border-white relative">
+              <HeroSlider />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
             </div>
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-[20px] shadow-xl border border-[#E4E6E8] hidden lg:block animate-in fade-in slide-in-from-left-4 duration-1000">
               <p className="text-sm font-bold text-[#C4161C] uppercase tracking-wider mb-3">{t.hero.nextMatch}</p>
@@ -70,7 +67,7 @@ const Home: React.FC = () => {
                   className="w-10 h-10 object-contain" 
                   onError={(e) => (e.currentTarget.style.display = 'none')}
                 />
-                <p className="text-xl font-bold whitespace-nowrap">
+                <p className="text-xl font-bold whitespace-nowrap text-[#111111]">
                   {t.hero.nextMatchData.homeTeam} vs {t.hero.nextMatchData.awayTeam}
                 </p>
                 <img 
